@@ -99,3 +99,47 @@ File: App Css
   background: $cubo-light-blue;
   border-color: $cubo-light-blue;
 }
+
+.badge-soft-cubo-light-blue {
+  background-color: rgba(41, 171, 226, 0.15) !important;
+
+  color: #29abe2 !important;
+  font-size: 14px !important;
+  line-height: 1;
+}
+.video-area {
+  position: relative;
+  .dropdown {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+}
+
+.text-gray {
+  color: #8997bd;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.video {
+  padding-top: 56%;
+  width: 100%;
+
+  background: #c4c4c4;
+
+  position: relative;
+}
+.video::before {
+  content: "►";
+
+  font-size: 64px;
+  color: #a0a0a0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
