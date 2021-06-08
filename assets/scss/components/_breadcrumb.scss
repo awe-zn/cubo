@@ -1,0 +1,16 @@
+.breadcrumb {
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 18px;
+
+  .breadcrumb-item {
+    a {
+      color: inherit;
+    }
+    &:hover,
+    &.active {
+      color: #29abe2;
+    }
+  }
+}

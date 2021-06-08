@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CUBODG Studio - Editar empresa</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      content="Premium Multipurpose Admin & Dashboard Template"
+      name="description"
+    />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/cubo/theme/favicon.ico"
+    />
+
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../assets/css/icons.css" rel="stylesheet" />
+    <link href="../../assets/css/metisMenu.min.css" rel="stylesheet" />
+    <link
+      href="../../assets/plugins/daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="left-sidenav">
+      <div class="brand">
+        <a
+          href="index.html"
+          class="logo p-3 d-flex align-items-center justify-content-center"
+        >
+          <img
+            src="../../assets/images/cubo/logo-white.png"
+            alt="Logo CuboOG"
+            class="img-fluid"
+          />
+        </a>
+      </div>
+      <div class="menu-content">
+        <ul class="left-sidenav-menu">
+          <li>
+            <a href="#">
+              <img
+                src="../../assets/images/cubo/icons/dashboard.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../groups/">
+              <img
+                src="../../assets/images/cubo/icons/groups.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Grupos</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../users/">
+              <img
+                src="../../assets/images/cubo/icons/users.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Participantes</span>
+            </a>
+          </li>
+          <li class="divider">
+            <a href="./../companies/" class="active">
+              <img
+                src="../../assets/images/cubo/icons/briefcase.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Empresas</span>
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <img
+                src="../../assets/images/cubo/icons/trending-up.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Relatórios</span>
+            </a>
+          </li>
+          <li>
+            <a href="../archives/index.html">
+              <img
+                src="../../assets/images/cubo/icons/folders.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Arquivos</span>
+            </a>
+          </li>
+          <li>
+            <a href="../videos/index.html">
+              <img
+                src="../../assets/images/cubo/icons/video.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Vídeos</span>
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <img
+                src="../../assets/images/cubo/icons/award.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Certificados</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="../../assets/images/cubo/icons/settings.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Configurações</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-wrapper">
+      <div class="topbar sticky-top bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar-custom">
+                <ul class="list-unstyled topbar-nav float-right mb-0">
+                  <li class="dropdown">
+                    <a
+                      class="nav-link dropdown-toggle waves-effect waves-light nav-user"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="false"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="../../assets/images/users/user-5.jpg"
+                        alt="profile-user"
+                        class="rounded-circle thumb-xs"
+                      />
+                      <span class="ml-1 nav-user-name hidden-sm"
+                        >Kevin Martin</span
+                      >
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-user align-self-center icon-xs icon-dual mr-1"
+                        >
+                          <path
+                            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Perfil</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-settings align-self-center icon-xs icon-dual mr-1"
+                        >
+                          <circle cx="12" cy="12" r="3"></circle>
+                          <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                          ></path>
+                        </svg>
+                        Ajustes</a
+                      >
+                      <div class="dropdown-divider mb-0"></div>
+                      <a class="dropdown-item" href="#"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-power align-self-center icon-xs icon-dual mr-1"
+                        >
+                          <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                          <line x1="12" y1="2" x2="12" y2="12"></line>
+                        </svg>
+                        Sair</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list-unstyled topbar-nav mb-0">
+                  <li>
+                    <button class="nav-link button-menu-mobile">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#343434"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-menu align-self-center topbar-icon"
+                      >
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12">
+              <h1 class="title-page">Editar empresa</h1>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="./index.html">Empresas</a>
+                </li>
+                <li class="breadcrumb-item active">Editar empresa</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-10">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Dados da empresa</h4>
+                </div>
+                <div class="card-body text-dark fz-14">
+                  <form action="./index.html">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <div class="form-group">
+                            <label for="search" class="font-weight-normal">
+                              Nome da empresa
+                            </label>
+                            <input
+                              type="email"
+                              id="search"
+                              class="form-control"
+                              placeholder="Nome da empresa"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label
+                              for="legal-identification"
+                              class="font-weight-normal"
+                            >
+                              Razão social
+                            </label>
+                            <input
+                              type="text"
+                              id="legal-identification"
+                              class="form-control"
+                              placeholder="Razão social"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="legal-code" class="font-weight-normal">
+                              CNPJ
+                            </label>
+                            <input
+                              type="text"
+                              id="legal-code"
+                              class="form-control"
+                              placeholder="000.000.000/0000-00"
+                            />
+                          </div>
+                          <div class="w-content">
+                            <label
+                              for="status-enterprise"
+                              class="font-weight-normal"
+                            >
+                              Status
+                            </label>
+                            <select id="status-enterprise" class="form-control">
+                              <option>Ativo</option>
+                              <option>Inativo</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column">
+                        <div class="mt-4 mt-md-0">
+                          <div class="form-group">
+                            <label for="addres" class="font-weight-normal">
+                              Endereço
+                            </label>
+                            <input
+                              type="text"
+                              id="addres"
+                              class="form-control"
+                              placeholder="Rua/avenida/travessa"
+                            />
+                          </div>
+                          <div class="row">
+                            <div class="col-8">
+                              <div class="form-group">
+                                <label
+                                  for="zip-code"
+                                  class="font-weight-normal"
+                                >
+                                  CEP
+                                </label>
+                                <input
+                                  type="text"
+                                  id="zip-code"
+                                  class="form-control"
+                                  placeholder="00000-000"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="form-group">
+                                <label
+                                  for="number-addres"
+                                  class="font-weight-normal"
+                                >
+                                  Número
+                                </label>
+                                <input
+                                  type="text"
+                                  id="number-addres"
+                                  class="form-control"
+                                  placeholder="0000"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-5">
+                              <div class="form-group">
+                                <label for="state" class="font-weight-normal">
+                                  Estado
+                                </label>
+                                <select id="state" class="form-control">
+                                  <option hidden disabled selected>
+                                    Selecione
+                                  </option>
+                                  <option>Rio Grande do Norte</option>
+                                  <option>São Paulo</option>
+                                  <option>Rio de Janeiro</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="form-group">
+                                <label for="state" class="font-weight-normal">
+                                  Cidade
+                                </label>
+                                <select id="state" class="form-control">
+                                  <option hidden disabled selected>
+                                    Selecione
+                                  </option>
+                                  <option>Natal</option>
+                                  <option>São Paulo</option>
+                                  <option>Rio de Janeiro</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn btn-cubo-light-blue mt-auto ml-auto"
+                        >
+                          CRIAR EMPRESA
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/metismenu.min.js"></script>
+    <script src="../../assets/js/waves.js"></script>
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/simplebar.min.js"></script>
+    <script src="../../assets/js/moment.js"></script>
+    <script src="../../assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <script src="../../assets/js/utils/toggleclass.js"></script>
+
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.table-group,
+.table-users,
+.table-companies {
+  td:nth-child(1) {
+    width: 29px;
+    text-align: center;
+  }
+}
+
+.table-group td:nth-child(2) {
+  width: 61px;
+}
+
+.table-users td:nth-child(3) {
+  width: 150px;
+}
+
+.table-responsive .table {
+  min-width: max-content;
+  width: 100%;
+}
+
+.colaborator-img-table {
+  width: 32px;
+  height: 32px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+}
