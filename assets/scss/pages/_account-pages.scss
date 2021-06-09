@@ -4,9 +4,9 @@
 
 .account-body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   &.accountbg {
-    background-image: url('../images/auth-bg.png');
+    background-image: url("../images/auth-bg.png");
     background-position: center center;
     background-size: cover;
     background-repeat: repeat;
@@ -28,7 +28,7 @@
       display: inline-block;
       margin: 0 6px 4px 6px;
 
-      content: ' ';
+      content: " ";
       text-shadow: none;
       border: 1px dashed $border;
       width: 120px;
@@ -36,7 +36,7 @@
     h6:before {
       display: inline-block;
       margin: 0 6px 4px 6px;
-      content: ' ';
+      content: " ";
       text-shadow: none;
       border: 1px dashed $border;
       width: 120px;
@@ -81,7 +81,7 @@
   }
 }
 .auth-bg {
-  background-image: url('../images/auth-bg.png');
+  background-image: url("../images/auth-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

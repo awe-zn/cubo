@@ -143,3 +143,7 @@ File: App Css
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+.page-wrapper footer {
+  @extend .text-gray;
+}

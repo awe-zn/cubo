@@ -30,10 +30,10 @@
   padding: $card-spacer-x;
 }
 
-code[class*='lang-html'],
-pre[class*='lang-html'] {
+code[class*="lang-html"],
+pre[class*="lang-html"] {
   color: #393a34;
-  font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier,
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier,
     monospace;
   direction: ltr;
   text-align: left;
@@ -108,7 +108,7 @@ pre[class*='lang-html'] {
   margin: 0;
   color: $header-title;
   text-shadow: 0 0 1px rgba($gray-200, 0.1);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
 .page-title-box {
@@ -132,7 +132,7 @@ pre[class*='lang-html'] {
 }
 
 .title-border:after {
-  content: '';
+  content: "";
   height: 3px;
   width: 80px;
   position: absolute;
@@ -168,8 +168,8 @@ pre[class*='lang-html'] {
       background-image: none;
     }
     &:after {
-      content: '\f054';
-      font-family: 'Font Awesome 5 Free' !important;
+      content: "\f054";
+      font-family: "Font Awesome 5 Free" !important;
       font-weight: 900;
       font-size: 0.875rem;
       color: $gray-700;
@@ -185,8 +185,8 @@ pre[class*='lang-html'] {
       background-image: none;
     }
     &:after {
-      content: '\f053';
-      font-family: 'Font Awesome 5 Free' !important;
+      content: "\f053";
+      font-family: "Font Awesome 5 Free" !important;
       font-weight: 900;
       font-size: 0.875rem;
       color: $gray-700;
@@ -196,8 +196,8 @@ pre[class*='lang-html'] {
   }
 }
 // Prism
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: transparent;
 }
 
@@ -268,8 +268,8 @@ pre[class*='language-'] {
   color: $gray-300;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   text-shadow: none;
   color: $gray-700;
 }
@@ -381,6 +381,9 @@ pre[class*='language-'] {
   color: black;
 }
 
+.fz-24 {
+  font-size: 24px !important;
+}
 .fz-16 {
   font-size: 16px !important;
 }
