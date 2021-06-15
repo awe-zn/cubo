@@ -134,7 +134,7 @@
 
     <div class="page-wrapper">
       <div class="topbar sticky-top bg-white">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-12">
               <nav class="navbar-custom">
@@ -223,7 +223,7 @@
 
                 <ul class="list-unstyled topbar-nav mb-0">
                   <li>
-                    <button class="nav-link button-menu-mobile">
+                    <button class="nav-link button-menu-mobile pl-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -234,7 +234,7 @@
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="feather feather-menu align-self-center topbar-icon"
+                        class="feather feather-menu align-self-center"
                       >
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -250,7 +250,7 @@
       </div>
 
       <div>
-        <div class="container">
+        <div class="container-fluid">
           <div class="row pt-3">
             <div class="col-12">
               <h1 class="title-page">Arquivos</h1>
@@ -296,54 +296,10 @@
                 <div class="card-body">
                   <div class="files-nav">
                     <div class="nav flex-column nav-pills" id="files-tab">
-                      <a class="nav-link" href="#">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-folder align-self-center icon-dual-file icon-sm mr-3"
-                        >
-                          <path
-                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
-                          ></path>
-                        </svg>
-                        <div class="d-inline-block align-self-center">
-                          <h5 class="m-0">Nome da pasta</h5>
-                          <small>12MB</small>
-                        </div>
-                      </a>
-                      <a class="nav-link" aria-selected="false" href="#">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-folder align-self-center icon-dual-file icon-sm mr-3"
-                        >
-                          <path
-                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
-                          ></path>
-                        </svg>
-                        <div class="d-inline-block align-self-center">
-                          <h5 class="m-0">Pasta da pasta 837438</h5>
-                          <small>13MB</small>
-                        </div>
-                      </a>
                       <a
-                        class="nav-link align-items-center"
-                        aria-selected="false"
-                        href="#"
+                        class="nav-link active"
+                        data-toggle="pill"
+                        href="#files-1"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -362,11 +318,11 @@
                           ></path>
                         </svg>
                         <div class="d-inline-block align-self-center">
-                          <h5 class="m-0">Pasta da pasta 834743</h5>
-                          <small>13MB</small>
+                          <h5 class="m-0">Arquivos</h5>
+                          <small>12MB</small>
                         </div>
                       </a>
-                      <a class="nav-link mb-0" href="#">
+                      <a class="nav-link" data-toggle="pill" href="#files-2">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -384,7 +340,51 @@
                           ></path>
                         </svg>
                         <div class="d-inline-block align-self-center">
-                          <h5 class="m-0">Pasta da pasta 734353</h5>
+                          <h5 class="m-0">Contratos</h5>
+                          <small>13MB</small>
+                        </div>
+                      </a>
+                      <a class="nav-link" data-toggle="pill" href="#files-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-folder align-self-center icon-dual-file icon-sm mr-3"
+                        >
+                          <path
+                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                          ></path>
+                        </svg>
+                        <div class="d-inline-block align-self-center">
+                          <h5 class="m-0">Licenças</h5>
+                          <small>13MB</small>
+                        </div>
+                      </a>
+                      <a class="nav-link" data-toggle="pill" href="#files-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-folder align-self-center icon-dual-file icon-sm mr-3"
+                        >
+                          <path
+                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                          ></path>
+                        </svg>
+                        <div class="d-inline-block align-self-center">
+                          <h5 class="m-0">Clientes</h5>
                           <small>13MB</small>
                         </div>
                       </a>
@@ -412,98 +412,385 @@
             </div>
 
             <div class="col-lg-9">
-              <div>
-                <h4 class="card-title mt-0 mb-3">Arquivos</h4>
-                <div class="file-box-content">
-                  <div class="file-box">
-                    <a href="#" class="download-icon-link">
-                      <i class="dripicons-download file-download-icon"></i>
-                    </a>
-                    <div class="text-center">
-                      <i class="lar la-file-alt text-primary"></i>
-                      <h6
-                        class="text-truncate text-dark fz-16 font-weight-bold"
-                      >
-                        Admin_Panel
-                      </h6>
-                      <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="files-1">
+                  <h4 class="card-title mt-0 mb-3">Arquivos</h4>
+                  <div class="file-box-content">
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
                     </div>
-                    <span class="file-box-score">Score: 10</span>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-danger"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-archive text-warning"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Payment_app.zip
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file text-secondary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          App_landing_001
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-info"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
                   </div>
-                  <div class="file-box">
-                    <a href="#" class="download-icon-link">
-                      <i class="dripicons-download file-download-icon"></i>
-                    </a>
-                    <div class="text-center">
-                      <i class="lar la-file-code text-danger"></i>
-                      <h6
-                        class="text-truncate text-dark fz-16 font-weight-bold"
-                      >
-                        Ecommerce.pdf
-                      </h6>
-                      <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                </div>
+                <div class="tab-pane fade" id="files-2">
+                  <h4 class="card-title mt-0 mb-3">Contratos</h4>
+                  <div class="file-box-content">
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
                     </div>
-                    <span class="file-box-score">Score: 10</span>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-danger"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-archive text-warning"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Payment_app.zip
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file text-secondary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          App_landing_001
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-info"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
                   </div>
-                  <div class="file-box">
-                    <a href="#" class="download-icon-link">
-                      <i class="dripicons-download file-download-icon"></i>
-                    </a>
-                    <div class="text-center">
-                      <i class="lar la-file-archive text-warning"></i>
-                      <h6
-                        class="text-truncate text-dark fz-16 font-weight-bold"
-                      >
-                        Payment_app.zip
-                      </h6>
-                      <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                </div>
+                <div class="tab-pane fade" id="files-3">
+                  <h4 class="card-title mt-0 mb-3">Licenças</h4>
+                  <div class="file-box-content">
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
                     </div>
-                    <span class="file-box-score">Score: 10</span>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-danger"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-archive text-warning"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Payment_app.zip
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file text-secondary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          App_landing_001
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-info"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
                   </div>
-                  <div class="file-box">
-                    <a href="#" class="download-icon-link">
-                      <i class="dripicons-download file-download-icon"></i>
-                    </a>
-                    <div class="text-center">
-                      <i class="lar la-file text-secondary"></i>
-                      <h6
-                        class="text-truncate text-dark fz-16 font-weight-bold"
-                      >
-                        App_landing_001
-                      </h6>
-                      <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                </div>
+                <div class="tab-pane fade" id="files-4">
+                  <h4 class="card-title mt-0 mb-3">Clientes</h4>
+                  <div class="file-box-content">
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
                     </div>
-                    <span class="file-box-score">Score: 10</span>
-                  </div>
-                  <div class="file-box">
-                    <a href="#" class="download-icon-link">
-                      <i class="dripicons-download file-download-icon"></i>
-                    </a>
-                    <div class="text-center">
-                      <i class="lar la-file-alt text-primary"></i>
-                      <h6
-                        class="text-truncate text-dark fz-16 font-weight-bold"
-                      >
-                        Admin_Panel
-                      </h6>
-                      <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-danger"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
                     </div>
-                    <span class="file-box-score">Score: 10</span>
-                  </div>
-                  <div class="file-box">
-                    <a href="#" class="download-icon-link">
-                      <i class="dripicons-download file-download-icon"></i>
-                    </a>
-                    <div class="text-center">
-                      <i class="lar la-file-code text-info"></i>
-                      <h6
-                        class="text-truncate text-dark fz-16 font-weight-bold"
-                      >
-                        Ecommerce.pdf
-                      </h6>
-                      <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-archive text-warning"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Payment_app.zip
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
                     </div>
-                    <span class="file-box-score">Score: 10</span>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file text-secondary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          App_landing_001
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-alt text-primary"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Admin_Panel
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
+                    <div class="file-box">
+                      <a href="#" class="download-icon-link">
+                        <i class="dripicons-download file-download-icon"></i>
+                      </a>
+                      <div class="text-center">
+                        <i class="lar la-file-code text-info"></i>
+                        <h6
+                          class="text-truncate text-dark fz-16 font-weight-bold"
+                        >
+                          Ecommerce.pdf
+                        </h6>
+                        <small class="text-muted fz-14">12/12/2020 - 3MB</small>
+                      </div>
+                      <span class="file-box-score">Score: 10</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -513,7 +800,7 @@
       </div>
 
       <footer class="border">
-        <div class="container py-3">
+        <div class="container-fluid py-3">
           <div class="row">
             <div class="col d-flex">
               <span>© 2021 Cubo Digital</span>
@@ -591,12 +878,15 @@
               </div>
               <div class="pt-5 mb-4 d-flex flex-row">
                 <button
-                  class="btn btn-outline-cubo-black ml-auto mr-2"
+                  class="btn btn-outline-cubo-black mr-2"
                   data-dismiss="modal"
                 >
                   CANCELAR
                 </button>
-                <button class="btn btn-cubo-light-blue" data-dismiss="modal">
+                <button
+                  class="btn btn-cubo-light-blue ml-auto"
+                  data-dismiss="modal"
+                >
                   CONCLUIR
                 </button>
               </div>

@@ -134,7 +134,7 @@
 
     <div class="page-wrapper">
       <div class="topbar sticky-top bg-white">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-12">
               <nav class="navbar-custom">
@@ -223,7 +223,7 @@
 
                 <ul class="list-unstyled topbar-nav mb-0">
                   <li>
-                    <button class="nav-link button-menu-mobile">
+                    <button class="nav-link button-menu-mobile pl-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -234,7 +234,7 @@
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="feather feather-menu align-self-center topbar-icon"
+                        class="feather feather-menu align-self-center"
                       >
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -250,7 +250,7 @@
       </div>
 
       <div>
-        <div class="container">
+        <div class="container-fluid">
           <div class="row pt-3">
             <div class="col-12">
               <h1 class="title-page">Vídeos</h1>
@@ -271,7 +271,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4">
               <div class="form-group">
                 <label for="search" class="font-weight-normal">
                   Pesquise pelo vídeo
@@ -291,7 +291,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card sticky-after-topbar">
                 <div class="card-header">
                   <div class="row align-items-center">
                     <div class="col">
@@ -380,17 +380,41 @@
               </div>
             </div>
 
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-8">
               <div>
                 <h4 class="card-title mt-0 mb-3">Vídeos</h4>
                 <div class="row">
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -422,35 +446,41 @@
                               aria-valuemax="100"
                             ></div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
-                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -482,35 +512,41 @@
                               aria-valuemax="100"
                             ></div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
-                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -542,35 +578,41 @@
                               aria-valuemax="100"
                             ></div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
-                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -602,35 +644,41 @@
                               aria-valuemax="100"
                             ></div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
-                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -662,35 +710,41 @@
                               aria-valuemax="100"
                             ></div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
-                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -722,35 +776,41 @@
                               aria-valuemax="100"
                             ></div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
-                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -782,35 +842,41 @@
                               aria-valuemax="100"
                             ></div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
-                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-4">
+                  <div class="col-md-6 col-xl-4">
                     <div
                       class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
                     >
-                      <span class="badge badge-pill badge-soft-cubo-light-blue">
-                        Nome da tag
-                      </span>
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                       <div class="w-100 d-flex flex-column">
                         <h2
@@ -844,22 +910,532 @@
                           </div>
                         </div>
                       </div>
-
-                      <div class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle font-weight-bold fz-16"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
                         >
-                          ⋮
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="./edit.html">Editar</a>
-                          <a class="dropdown-item text-danger" href="#"
-                            >Excluir</a
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
                           >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div
+                      class="border p-3 d-flex flex-column align-items-start rounded video-area mb-3"
+                    >
+                      <div class="d-flex w-100 justify-content-between">
+                        <span
+                          class="badge badge-pill badge-soft-cubo-light-blue"
+                        >
+                          Nome da tag
+                        </span>
+
+                        <div class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle font-weight-bold fz-16"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            ⋮
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="./edit.html"
+                              >Editar</a
+                            >
+                            <a class="dropdown-item text-danger" href="#"
+                              >Excluir</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-100 d-flex flex-column">
+                        <h2
+                          class="text-dark fz-14 font-weight-normal mt-3 mb-1 lh-1"
+                        >
+                          Nome do vídeo
+                        </h2>
+                        <p class="text-gray fz-14 mb-4">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+
+                        <div class="video"></div>
+
+                        <span class="text-gray fz-14 mt-1">Score: 45</span>
+
+                        <div class="mt-2">
+                          <small class="float-right">45%</small>
+                          <h6 class="mt-0 font-weight-normal mb-1">
+                            Progresso
+                          </h6>
+                          <div class="progress" style="height: 5px">
+                            <div
+                              class="progress-bar bg-success"
+                              role="progressbar"
+                              style="width: 45%"
+                              aria-valuenow="45"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -872,7 +1448,7 @@
       </div>
 
       <footer class="border">
-        <div class="container py-3">
+        <div class="container-fluid py-3">
           <div class="row">
             <div class="col d-flex">
               <span>© 2021 Cubo Digital</span>
@@ -933,29 +1509,29 @@
                 </div>
               </div>
               <div class="row mt-3 pb-5">
-                <div class="col-sm-6 col-8">
-                  <label
-                    for="#"
-                    class="btn btn-outline-cubo-light-blue w-100 d-flex align-items-center justify-content-center mb-0"
-                  >
-                    <i class="dripicons-upload mr-2 fz-16 d-flex"></i>
-                    UPLOAD DE VÍDEO
-                  </label>
-                </div>
-                <div class="col-sm-6 col-4 d-flex align-items-end">
-                  <span class="fz-16 text-dark text-truncate">
-                    Aquivo-3.mp4
-                  </span>
+                <div class="col-sm-10 col-md-7 col-12">
+                  <div class="form-group mb-3 mb-sm-0">
+                    <label for="group-name">Link do vídeo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="group-name"
+                      placeholder="Link do vídeo"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="pt-5 mb-4 d-flex flex-row">
                 <button
-                  class="btn btn-outline-cubo-black ml-auto mr-2"
+                  class="btn btn-outline-cubo-black mr-2"
                   data-dismiss="modal"
                 >
                   CANCELAR
                 </button>
-                <button class="btn btn-cubo-light-blue" data-dismiss="modal">
+                <button
+                  class="btn btn-cubo-light-blue ml-auto"
+                  data-dismiss="modal"
+                >
                   CONCLUIR
                 </button>
               </div>

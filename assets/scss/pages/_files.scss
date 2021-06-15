@@ -26,6 +26,17 @@
         color: $gray-500;
         font-size: 10px;
       }
+
+      &.active {
+        color: #1761fd !important;
+        h5 {
+          color: inherit !important;
+        }
+        .icon-dual-file {
+          color: inherit !important;
+          fill: rgba(23, 97, 253, 0.12) !important;
+        }
+      }
     }
   }
 }

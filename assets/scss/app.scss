@@ -107,14 +107,6 @@ File: App Css
   font-size: 14px !important;
   line-height: 1;
 }
-.video-area {
-  position: relative;
-  .dropdown {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-  }
-}
 
 .text-gray {
   color: #8997bd;
@@ -146,4 +138,9 @@ File: App Css
 
 .page-wrapper footer {
   @extend .text-gray;
+}
+
+.sticky-after-topbar {
+  position: sticky;
+  top: 64px;
 }

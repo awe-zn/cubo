@@ -8,7 +8,7 @@
   min-height: 100vh;
   border-right: 1px solid $border;
 
-  background-color: #094157;
+  background-color: #0c213a;
   transition: 0.3s;
 
   position: fixed;
@@ -209,18 +209,16 @@
   }
 }
 
-@media (max-width: 1024px) {
-  // Enlarge menu
-  .enlarge-menu {
-    .left-sidenav {
-      display: none;
-      .brand {
-        background-color: $bg-navbar;
-      }
+// Enlarge menu
+.enlarge-menu {
+  .left-sidenav {
+    display: none;
+    .brand {
+      background-color: $bg-navbar;
     }
-    .page-wrapper {
-      margin: 0;
-    }
+  }
+  .page-wrapper {
+    margin: 0;
   }
 }
 
