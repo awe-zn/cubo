@@ -253,7 +253,15 @@
         <div class="container-fluid">
           <div class="row pt-3">
             <div class="col-12">
-              <h1 class="title-page">Vídeos</h1>
+              <div class="page-title-box">
+                <h1 class="page-title">Vídeos</h1>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#">CUBOOG</a>
+                  </li>
+                  <li class="breadcrumb-item active">Participantes</li>
+                </ol>
+              </div>
             </div>
           </div>
           <div class="row pt-1 pb-3">
@@ -272,108 +280,110 @@
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-4">
-              <div class="form-group">
-                <label for="search" class="font-weight-normal">
-                  Pesquise pelo vídeo
-                </label>
-                <div class="input-group">
-                  <input
-                    type="email"
-                    id="search"
-                    class="form-control"
-                    placeholder="Pesquisar"
-                  />
-                  <div class="input-group-append">
-                    <span class="input-group-text text-cubo-blue">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card sticky-after-topbar">
-                <div class="card-header">
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <h4 class="card-title">Busque por Tags</h4>
+              <div class="sticky-after-topbar">
+                <div class="form-group">
+                  <label for="search" class="font-weight-normal">
+                    Pesquise pelo vídeo
+                  </label>
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      id="search"
+                      class="form-control"
+                      placeholder="Pesquisar"
+                    />
+                    <div class="input-group-append">
+                      <span class="input-group-text text-cubo-blue">
+                        <i class="fas fa-search"></i>
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                <div class="card-body">
-                  <div class="files-nav">
-                    <div class="nav flex-column nav-pills" id="files-tab">
-                      <div class="form-check-inline my-1">
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="all"
-                            data-parsley-multiple="groups"
-                            data-parsley-mincheck="2"
-                          />
-                          <label
-                            class="custom-control-label custom-video-checkbox"
-                            for="all"
-                          >
-                            Todos
-                          </label>
-                        </div>
+                <div class="card">
+                  <div class="card-header">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <h4 class="card-title">Busque por Tags</h4>
                       </div>
-                      <div class="form-check-inline my-1">
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="opt1"
-                            data-parsley-multiple="groups"
-                            data-parsley-mincheck="2"
-                          />
-                          <label
-                            class="custom-control-label custom-video-checkbox"
-                            for="opt1"
-                          >
-                            Nome da tag
-                          </label>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="files-nav">
+                      <div class="nav flex-column nav-pills" id="files-tab">
+                        <div class="form-check-inline my-1">
+                          <div class="custom-control custom-checkbox">
+                            <input
+                              type="checkbox"
+                              class="custom-control-input"
+                              id="all"
+                              data-parsley-multiple="groups"
+                              data-parsley-mincheck="2"
+                            />
+                            <label
+                              class="custom-control-label custom-video-checkbox"
+                              for="all"
+                            >
+                              Todos
+                            </label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-check-inline my-1">
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="opt2"
-                            data-parsley-multiple="groups"
-                            data-parsley-mincheck="2"
-                          />
-                          <label
-                            class="custom-control-label custom-video-checkbox"
-                            for="opt2"
-                          >
-                            Nome da tag
-                          </label>
+                        <div class="form-check-inline my-1">
+                          <div class="custom-control custom-checkbox">
+                            <input
+                              type="checkbox"
+                              class="custom-control-input"
+                              id="opt1"
+                              data-parsley-multiple="groups"
+                              data-parsley-mincheck="2"
+                            />
+                            <label
+                              class="custom-control-label custom-video-checkbox"
+                              for="opt1"
+                            >
+                              Nome da tag
+                            </label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-check-inline my-1">
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="opt3"
-                            data-parsley-multiple="groups"
-                            data-parsley-mincheck="2"
-                          />
-                          <label
-                            class="custom-control-label custom-video-checkbox"
-                            for="opt3"
-                          >
-                            Nome da tag
-                          </label>
+                        <div class="form-check-inline my-1">
+                          <div class="custom-control custom-checkbox">
+                            <input
+                              type="checkbox"
+                              class="custom-control-input"
+                              id="opt2"
+                              data-parsley-multiple="groups"
+                              data-parsley-mincheck="2"
+                            />
+                            <label
+                              class="custom-control-label custom-video-checkbox"
+                              for="opt2"
+                            >
+                              Nome da tag
+                            </label>
+                          </div>
                         </div>
+                        <div class="form-check-inline my-1">
+                          <div class="custom-control custom-checkbox">
+                            <input
+                              type="checkbox"
+                              class="custom-control-input"
+                              id="opt3"
+                              data-parsley-multiple="groups"
+                              data-parsley-mincheck="2"
+                            />
+                            <label
+                              class="custom-control-label custom-video-checkbox"
+                              for="opt3"
+                            >
+                              Nome da tag
+                            </label>
+                          </div>
+                        </div>
+                        <a href="#" class="text-cubo-light-blue fz-16 mt-3">
+                          Adicionar tag
+                        </a>
                       </div>
-                      <a href="#" class="text-cubo-light-blue fz-16 mt-3">
-                        Adicionar tag
-                      </a>
                     </div>
                   </div>
                 </div>
