@@ -148,3 +148,10 @@ File: App Css
 .page-title-box {
   padding: 0;
 }
+
+.btn:not(.btn-root),
+.form-control {
+  line-height: 1 !important;
+  padding: 0.75em 1.5em !important;
+  font-size: 14px !important;
+}
