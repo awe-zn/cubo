@@ -2,7 +2,7 @@
  Horizontal-nav
 */
 
-[data-layout='horizontal'] {
+[data-layout="horizontal"] {
   display: inherit;
 
   .navbar-custom {
@@ -180,7 +180,7 @@
 }
 
 @media (max-width: 1499.98px) {
-  body[data-layout='horizontal'] {
+  body[data-layout="horizontal"] {
     display: flex;
     .topbar {
       position: absolute;
@@ -192,7 +192,7 @@
 }
 
 @media (max-width: 1024px) {
-  body[data-layout='horizontal'] {
+  body[data-layout="horizontal"] {
     display: flex;
     .page-wrapper {
       width: 100%;
@@ -309,8 +309,8 @@
           }
           > li {
             &.has-submenu > a:after {
-              content: '\e649';
-              font-family: 'themify';
+              content: "\e649";
+              font-family: "themify";
               position: absolute;
               right: 20px;
               top: 9px;
@@ -379,7 +379,7 @@
 }
 
 @media (max-width: 991px) {
-  body[data-layout='horizontal'] {
+  body[data-layout="horizontal"] {
     .page-wrapper {
       width: 100%;
     }
@@ -426,8 +426,8 @@
               }
             }
             &.has-submenu > a:after {
-              content: '\e649';
-              font-family: 'themify';
+              content: "\e649";
+              font-family: "themify";
               position: absolute;
               right: 30px;
             }
@@ -560,7 +560,6 @@
 
 @media (max-width: 767px) {
   .page-title-box {
-    .breadcrumb,
     .state-information {
       display: none;
     }

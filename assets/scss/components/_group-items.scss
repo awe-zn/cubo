@@ -1,4 +1,5 @@
-.group-item {
+.group-item,
+.report-item {
   height: 100%;
   border: 1px solid #e3ebf6;
   border-radius: 4px;
@@ -36,9 +37,12 @@
 
       flex: 1;
     }
-    .info .member-number {
-      color: #8997bd;
-      font-size: 14px;
+    .info {
+      .member-number,
+      .score {
+        color: #8997bd;
+        font-size: 14px;
+      }
     }
   }
   .content {
@@ -113,5 +117,13 @@
     position: absolute;
     right: 16px;
     top: 16px;
+  }
+}
+.report-item {
+  .content {
+    .info {
+      font-size: 14px;
+      color: #4f4f4f;
+    }
   }
 }

@@ -104,12 +104,12 @@ pre[class*="lang-html"] {
 .card-title {
   text-transform: capitalize;
   letter-spacing: 0.02em;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 500;
   margin: 0;
   color: $header-title;
   text-shadow: 0 0 1px rgba($gray-200, 0.1);
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
 }
 .page-title-box {
   padding: 16px 0;

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>CUBODG Studio - Novo participante</title>
+    <title>CUBODG Studio - Relatórios</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -69,7 +69,7 @@
             </a>
           </li>
           <li class="divider">
-            <a href="./../companies/" class="active">
+            <a href="./../companies/">
               <img
                 src="../../assets/images/cubo/icons/briefcase.svg"
                 alt=""
@@ -79,7 +79,7 @@
             </a>
           </li>
           <li class="divider">
-            <a href="../reports/index.html">
+            <a href="../reports/index.html" class="active">
               <img
                 src="../../assets/images/cubo/icons/trending-up.svg"
                 alt=""
@@ -251,25 +251,37 @@
 
       <div>
         <div class="container-fluid">
-          <div class="row py-3">
+          <div class="row pt-3">
             <div class="col-12">
               <div class="page-title-box">
-                <h1 class="page-title">Empresas</h1>
+                <h1 class="page-title">Relatórios de respostas</h1>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="#">CUBOOG</a>
                   </li>
-                  <li class="breadcrumb-item active">Empresas</li>
+                  <li class="breadcrumb-item active">
+                    Relatórios de respostas
+                  </li>
                 </ol>
               </div>
             </div>
           </div>
-          <div class="row pt-1 pb-3">
-            <div class="col-lg-4 col-sm-8">
-              <div class="form-group mb-sm-0">
-                <label for="search" class="font-weight-normal"
-                  >Pesquise pelo nome/CNPJ</label
+          <div class="row pb-3">
+            <div class="col">
+              <div class="d-flex flex-column flex-sm-row">
+                <a
+                  href="./create.html"
+                  class="btn btn-outline-cubo-light-blue ml-auto mt-2 d-flex"
                 >
+                  <i class="fas fa-plus mr-2 d-flex"></i> CRIAR QUESTIONÁRIO
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-sm-1 pb-3">
+            <div class="col-md-4 col-sm-7">
+              <div class="mt-1 mt-sm-0">
+                <label for="search">Pesquise pelo questionário</label>
                 <div class="input-group">
                   <input
                     type="email"
@@ -285,155 +297,223 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2 col-sm-4">
-              <div class="form-group mb-sm-0">
-                <label for="status-filter" class="font-weight-normal"
-                  >Filtre por status</label
-                >
-                <select class="form-control" id="status-filter">
-                  <option>Todos</option>
-                  <option>Ativo</option>
-                  <option>Inativo</option>
+            <div class="col-md-3 col-sm-5">
+              <div class="mt-2 mt-sm-0">
+                <label for="enterprise-filter">Filtre por empresa</label>
+                <select class="form-control" id="enterprise-filter">
+                  <option>Empresa #1</option>
+                  <option>Empresa #2</option>
+                  <option>Empresa #3</option>
                 </select>
               </div>
             </div>
-            <div class="col ml-auto">
-              <div class="h-100 d-flex">
-                <div class="d-flex mt-auto ml-auto">
-                  <a
-                    href="./create.html"
-                    class="btn btn-outline-cubo-light-blue fz-14 ml-auto mt-2"
-                  >
-                    <i class="fas fa-plus"></i> NOVA EMPRESA
-                  </a>
-                </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="mt-2 mt-md-0">
+                <label for="group-filter">Filtre por grupo</label>
+                <select class="form-control" id="group-filter">
+                  <option>Grupo #1</option>
+                  <option>Grupo #2</option>
+                  <option>Grupo #3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <div class="mt-2 mt-md-0">
+                <label for="score-filter">Ordenar por</label>
+                <select class="form-control" id="score-filter">
+                  <option>Maior score</option>
+                  <option>Menor score</option>
+                </select>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="card-title">Todos as empresas</h4>
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+              <div class="report-item">
+                <div class="head">
+                  <div class="info">
+                    <span class="name">Nome do relatório</span>
+                    <span class="score">Score: 748353</span>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-hover mb-0 fz-14 table-companies">
-                      <thead class="thead-light text-dark">
-                        <tr>
-                          <th>Status</th>
-                          <th>Nome</th>
-                          <th>Razão social</th>
-                          <th>CNPJ</th>
-                          <th>Score</th>
-                          <th>&nbsp;</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><span class="status active">Ativo</span></td>
-                          <td><a href="./single.html">JP Tecnologias</a></td>
-                          <td>
-                            <a href="./single.html"
-                              >TECNOLOGIAS NA PALMA LTDA</a
-                            >
-                          </td>
-                          <td>
-                            <a href="./single.html">000.000.000/0000-00</a>
-                          </td>
-                          <td>10,000</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                href="#"
-                                class="btn btn-sm btn-outline-light dropdown-toggle font-weight-bold"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                ...
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="./edit.html"
-                                  >Editar</a
-                                >
-                                <a class="dropdown-item text-danger" href="#">
-                                  Excluir
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="status active">Ativo</span></td>
-                          <td><a href="./single.html">Jogos S.A.</a></td>
-                          <td>
-                            <a href="./single.html">ANDRE SALESIANO JOGOS IE</a>
-                          </td>
-                          <td>
-                            <a href="./single.html">000.000.000/0000-00</a>
-                          </td>
-                          <td>10,000</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                href="#"
-                                class="btn btn-sm btn-outline-light dropdown-toggle font-weight-bold"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                ...
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="./edit.html"
-                                  >Editar</a
-                                >
-                                <a class="dropdown-item text-danger" href="#">
-                                  Excluir
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="status inactive">Inativo</span></td>
-                          <td>
-                            <a href="./single.html">Zebrado Corporações</a>
-                          </td>
-                          <td>
-                            <a href="./single.html"
-                              >ZEBRADO CORPORAÇÕES E CIA</a
-                            >
-                          </td>
-                          <td>
-                            <a href="./single.html">000.000.000/0000-00</a>
-                          </td>
-                          <td>10,000</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                href="#"
-                                class="btn btn-sm btn-outline-light dropdown-toggle font-weight-bold"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                ...
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="./edit.html"
-                                  >Editar</a
-                                >
-                                <a class="dropdown-item text-danger" href="#">
-                                  Excluir
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <div class="content">
+                  <span class="info">Empresa: Nome da empresa</span>
+                  <span class="info">Grupo: Nome do grupo</span>
+                </div>
+                <div class="foot">
+                  <div class="status">
+                    Status:
+                    <span class="active">Ativo</span>
+                  </div>
+                  <button class="btn-details">
+                    Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle font-weight-bold"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ⋮
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="./edit.html">Editar</a>
+                    <a class="dropdown-item text-danger" href="#">Excluir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+              <div class="report-item">
+                <div class="head">
+                  <div class="info">
+                    <span class="name">Nome do relatório</span>
+                    <span class="score">Score: 748353</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <span class="info">Empresa: Nome da empresa</span>
+                  <span class="info">Grupo: Nome do grupo</span>
+                </div>
+                <div class="foot">
+                  <div class="status">
+                    Status:
+                    <span class="active">Ativo</span>
+                  </div>
+                  <button class="btn-details">
+                    Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle font-weight-bold"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ⋮
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="./edit.html">Editar</a>
+                    <a class="dropdown-item text-danger" href="#">Excluir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+              <div class="report-item">
+                <div class="head">
+                  <div class="info">
+                    <span class="name">Nome do relatório</span>
+                    <span class="score">Score: 748353</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <span class="info">Empresa: Nome da empresa</span>
+                  <span class="info">Grupo: Nome do grupo</span>
+                </div>
+                <div class="foot">
+                  <div class="status">
+                    Status:
+                    <span class="active">Ativo</span>
+                  </div>
+                  <button class="btn-details">
+                    Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle font-weight-bold"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ⋮
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="./edit.html">Editar</a>
+                    <a class="dropdown-item text-danger" href="#">Excluir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+              <div class="report-item">
+                <div class="head">
+                  <div class="info">
+                    <span class="name">Nome do relatório</span>
+                    <span class="score">Score: 748353</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <span class="info">Empresa: Nome da empresa</span>
+                  <span class="info">Grupo: Nome do grupo</span>
+                </div>
+                <div class="foot">
+                  <div class="status">
+                    Status:
+                    <span class="active">Ativo</span>
+                  </div>
+                  <button class="btn-details">
+                    Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle font-weight-bold"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ⋮
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="./edit.html">Editar</a>
+                    <a class="dropdown-item text-danger" href="#">Excluir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+              <div class="report-item">
+                <div class="head">
+                  <div class="info">
+                    <span class="name">Nome do relatório</span>
+                    <span class="score">Score: 748353</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <span class="info">Empresa: Nome da empresa</span>
+                  <span class="info">Grupo: Nome do grupo</span>
+                </div>
+                <div class="foot">
+                  <div class="status">
+                    Status:
+                    <span class="active">Ativo</span>
+                  </div>
+                  <button class="btn-details">
+                    Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle font-weight-bold"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ⋮
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="./edit.html">Editar</a>
+                    <a class="dropdown-item text-danger" href="#">Excluir</a>
                   </div>
                 </div>
               </div>
