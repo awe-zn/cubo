@@ -141,7 +141,12 @@
                 <ul class="list-unstyled topbar-nav float-right mb-0">
                   <li class="dropdown">
                     <a
-                      class="nav-link dropdown-toggle waves-effect waves-light nav-user"
+                      class="
+                        nav-link
+                        dropdown-toggle
+                        waves-effect waves-light
+                        nav-user
+                      "
                       data-toggle="dropdown"
                       href="#"
                       role="button"
@@ -169,7 +174,12 @@
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          class="feather feather-user align-self-center icon-xs icon-dual mr-1"
+                          class="
+                            feather feather-user
+                            align-self-center
+                            icon-xs icon-dual
+                            mr-1
+                          "
                         >
                           <path
                             d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
@@ -189,7 +199,12 @@
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          class="feather feather-settings align-self-center icon-xs icon-dual mr-1"
+                          class="
+                            feather feather-settings
+                            align-self-center
+                            icon-xs icon-dual
+                            mr-1
+                          "
                         >
                           <circle cx="12" cy="12" r="3"></circle>
                           <path
@@ -210,7 +225,12 @@
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          class="feather feather-power align-self-center icon-xs icon-dual mr-1"
+                          class="
+                            feather feather-power
+                            align-self-center
+                            icon-xs icon-dual
+                            mr-1
+                          "
                         >
                           <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
                           <line x1="12" y1="2" x2="12" y2="12"></line>
@@ -345,9 +365,13 @@
                     Status:
                     <span class="active">Ativo</span>
                   </div>
-                  <button class="btn-details">
+                  <a
+                    href="#modal-details"
+                    data-toggle="modal"
+                    class="btn-details"
+                  >
                     Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
-                  </button>
+                  </a>
                 </div>
                 <div class="dropdown">
                   <a
@@ -383,9 +407,13 @@
                     Status:
                     <span class="active">Ativo</span>
                   </div>
-                  <button class="btn-details">
+                  <a
+                    href="#modal-details"
+                    data-toggle="modal"
+                    class="btn-details"
+                  >
                     Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
-                  </button>
+                  </a>
                 </div>
                 <div class="dropdown">
                   <a
@@ -421,9 +449,13 @@
                     Status:
                     <span class="active">Ativo</span>
                   </div>
-                  <button class="btn-details">
+                  <a
+                    href="#modal-details"
+                    data-toggle="modal"
+                    class="btn-details"
+                  >
                     Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
-                  </button>
+                  </a>
                 </div>
                 <div class="dropdown">
                   <a
@@ -459,9 +491,13 @@
                     Status:
                     <span class="active">Ativo</span>
                   </div>
-                  <button class="btn-details">
+                  <a
+                    href="#modal-details"
+                    data-toggle="modal"
+                    class="btn-details"
+                  >
                     Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
-                  </button>
+                  </a>
                 </div>
                 <div class="dropdown">
                   <a
@@ -497,9 +533,13 @@
                     Status:
                     <span class="active">Ativo</span>
                   </div>
-                  <button class="btn-details">
+                  <a
+                    href="#modal-details"
+                    data-toggle="modal"
+                    class="btn-details"
+                  >
                     Ver detalhes<i class="fas fa-long-arrow-alt-right"></i>
-                  </button>
+                  </a>
                 </div>
                 <div class="dropdown">
                   <a
@@ -534,6 +574,82 @@
       </footer>
     </div>
 
+    <div class="modal fade" id="modal-details">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-4 bg-white">
+          <div class="modal-header bg-transparent pt-0 pb-4 px-2 border-0">
+            <div>
+              <h6 class="fz-16 text-dark m-0">Nome do relatório</h6>
+              <span class="text-gray">Score: 748353</span>
+            </div>
+            <button
+              type="button"
+              class="close fz-16 text-dark"
+              data-dismiss="modal"
+            >
+              <i class="la la-times"></i>
+            </button>
+          </div>
+          <div class="modal-body d-flex flex-column px-2 py-0">
+            <span class="text-cubo-black fz-16">Gráfico de desempenho</span>
+
+            <div>
+              <div id="chart"></div>
+            </div>
+            <div class="pt-5 mb-4">
+              <h2
+                class="m-0 mb-3 text-cubo-black fz-16 font-weight-normal lh-1"
+              >
+                Número de acertos por questão
+              </h2>
+              <div>
+                <div class="p-3 border border-light rounded mb-2">
+                  <h3 class="text-cubo-black fz-14 m-0 pb-2">
+                    1. Título da questão
+                  </h3>
+                  <div class="pt-1">
+                    <div class="d-flex fz-14 text-cubo-black">
+                      <span>Acertos: 8</span>
+                      <span class="ml-auto">80%</span>
+                    </div>
+                    <div class="progress mb-3">
+                      <div
+                        class="progress-bar bg-success progress-bar-striped"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3 border border-light rounded mb-2">
+                  <h3 class="text-cubo-black fz-14 m-0 pb-2">
+                    2. Título da questão
+                  </h3>
+                  <div class="pt-1">
+                    <div class="d-flex fz-14 text-cubo-black">
+                      <span>Acertos: 2</span>
+                      <span class="ml-auto">20%</span>
+                    </div>
+                    <div class="progress mb-3">
+                      <div
+                        class="progress-bar bg-danger progress-bar-striped"
+                        style="width: 20%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="#" class="btn btn-outline-cubo-light-blue">
+                <i data-feather="download" height="14"></i> DOWNLOAD DO
+                RELATÓRIO
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/metismenu.min.js"></script>
@@ -542,9 +658,36 @@
     <script src="../../assets/js/simplebar.min.js"></script>
     <script src="../../assets/js/moment.js"></script>
     <script src="../../assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="../../assets/plugins/apex-charts/apexcharts.min.js"></script>
 
     <script src="../../assets/js/utils/toggleclass.js"></script>
 
     <script src="../../assets/js/app.js"></script>
+
+    <script>
+      var options = {
+        series: [50, 200],
+        labels: ["Erros", "Acertos"],
+        chart: {
+          type: "donut",
+        },
+        colors: ["#2A76F4", "#94BAF9"],
+        legend: {
+          show: true,
+          position: "right",
+          horizontalAlign: "right",
+        },
+      };
+
+      const chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script>
+    <style>
+      .apexcharts-legend {
+        justify-content: flex-end !important;
+        bottom: 8px !important;
+        top: initial !important;
+      }
+    </style>
   </body>
 </html>
