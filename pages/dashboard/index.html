@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CUBODG Studio - Novo participante</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../assets/css/icons.css" rel="stylesheet" />
+    <link href="../../assets/css/metisMenu.min.css" rel="stylesheet" />
+    <link
+      href="../../assets/plugins/daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="left-sidenav">
+      <div class="brand">
+        <a
+          href="index.html"
+          class="logo p-3 d-flex align-items-center justify-content-center"
+        >
+          <img
+            src="../../assets/images/cubo/logo-white.png"
+            alt="Logo CuboOG"
+            class="img-fluid"
+          />
+        </a>
+      </div>
+      <div class="menu-content">
+        <ul class="left-sidenav-menu">
+          <li>
+            <a href="#" class="active">
+              <img
+                src="../../assets/images/cubo/icons/dashboard.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../groups/">
+              <img
+                src="../../assets/images/cubo/icons/groups.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Grupos</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../users/">
+              <img
+                src="../../assets/images/cubo/icons/users.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Participantes</span>
+            </a>
+          </li>
+          <li class="divider">
+            <a href="./../companies/">
+              <img
+                src="../../assets/images/cubo/icons/briefcase.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Empresas</span>
+            </a>
+          </li>
+          <li class="divider">
+            <a href="../reports/index.html">
+              <img
+                src="../../assets/images/cubo/icons/trending-up.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Relatórios</span>
+            </a>
+          </li>
+          <li>
+            <a href="../archives/index.html">
+              <img
+                src="../../assets/images/cubo/icons/folders.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Arquivos</span>
+            </a>
+          </li>
+          <li>
+            <a href="../videos/index.html">
+              <img
+                src="../../assets/images/cubo/icons/video.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Vídeos</span>
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <img
+                src="../../assets/images/cubo/icons/award.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Certificados</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="../../assets/images/cubo/icons/settings.svg"
+                alt=""
+                class="menu-icon"
+              />
+              <span class="lh-1">Configurações</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-wrapper">
+      <div class="topbar sticky-top bg-white">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar-custom">
+                <ul class="list-unstyled topbar-nav float-right mb-0">
+                  <li class="dropdown">
+                    <a
+                      class="nav-link dropdown-toggle waves-effect waves-light nav-user"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="false"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="../../assets/images/cubo/colaborator.png"
+                        alt="profile-user"
+                        class="rounded-circle thumb-xs"
+                      />
+                      <span class="ml-1 nav-user-name hidden-sm">
+                        Kevin Martin</span
+                      >
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-user align-self-center icon-xs icon-dual mr-1"
+                        >
+                          <path
+                            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Perfil</a
+                      >
+
+                      <a class="dropdown-item" href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-settings align-self-center icon-xs icon-dual mr-1"
+                        >
+                          <circle cx="12" cy="12" r="3"></circle>
+                          <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                          ></path>
+                        </svg>
+                        Ajustes</a
+                      >
+
+                      <div class="dropdown-divider mb-0"></div>
+                      <a class="dropdown-item" href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-power align-self-center icon-xs icon-dual mr-1"
+                        >
+                          <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                          <line x1="12" y1="2" x2="12" y2="12"></line>
+                        </svg>
+                        Sair</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list-unstyled topbar-nav mb-0">
+                  <li>
+                    <button class="nav-link button-menu-mobile pl-lg-0">
+                      <i data-feather="menu" class="align-self-center"> </i>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container-fluid">
+          <div class="row py-3">
+            <div class="col-12">
+              <div class="page-title-box">
+                <h1 class="page-title">Dashboard</h1>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#">CUBOOG</a>
+                  </li>
+                  <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-1 pb-3">
+            <div class="col-md-4">
+              <div class="card report-card">
+                <div class="card-body">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col">
+                      <p class="text-dark mb-0 font-weight-semibold">
+                        Empresas
+                      </p>
+                      <h3 class="m-0">360</h3>
+                    </div>
+                    <div class="col-auto align-self-center">
+                      <div class="report-main-icon bg-light-alt">
+                        <i
+                          data-feather="briefcase"
+                          class="align-self-center text-muted icon-sm"
+                        >
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card report-card">
+                <div class="card-body">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col">
+                      <p class="text-dark mb-0 font-weight-semibold">Grupos</p>
+                      <h3 class="m-0">24</h3>
+                    </div>
+                    <div class="col-auto align-self-center">
+                      <div class="report-main-icon bg-light-alt">
+                        <i
+                          data-feather="users"
+                          class="align-self-center text-muted icon-sm"
+                        >
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card report-card">
+                <div class="card-body">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col">
+                      <p class="text-dark mb-0 font-weight-semibold">
+                        Usuários
+                      </p>
+                      <h3 class="m-0">1045</h3>
+                    </div>
+                    <div class="col-auto align-self-center">
+                      <div class="report-main-icon bg-light-alt">
+                        <i
+                          data-feather="user"
+                          class="align-self-center text-muted icon-sm"
+                        >
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h4 class="card-title">Empresas melhor avaliadas</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <div class="table-responsive browser_users">
+                    <table class="table data-top mb-0">
+                      <thead class="thead-light">
+                        <tr>
+                          <th class="border-top-0">Empresa</th>
+                          <th class="border-top-0">
+                            Quantidade de participantes
+                          </th>
+                          <th class="border-top-0">Quantidade de grupos</th>
+                          <th class="border-top-0">Usuários com maior score</th>
+                          <th class="border-top-0">Usuários com menor score</th>
+                          <th class="border-top-0">Quantidade de Salas</th>
+                          <th class="border-top-0">
+                            Quantidade de questionários criados
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Empresa #1</td>
+                          <td>19</td>
+                          <td>4</td>
+                          <td>
+                            <div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Carmo Duda Torres
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Carmo Duda Cruz Almeida
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Duda Carmo Coelho
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Carmo Duda Torres
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Carmo Duda Cruz Almeida
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Duda Carmo Coelho
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>6</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>Empresa #2</td>
+                          <td>25</td>
+                          <td>5</td>
+                          <td>
+                            <div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Carmo Duda Torres
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Carmo Duda Cruz Almeida
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Duda Carmo Coelho
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Carmo Duda Torres
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Carmo Duda Cruz Almeida
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Duda Carmo Coelho
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>8</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td>Empresa #3</td>
+                          <td>30</td>
+                          <td>3</td>
+                          <td>
+                            <div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Carmo Duda Torres
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Carmo Duda Cruz Almeida
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Duda Carmo Coelho
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Carmo Duda Torres
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Carmo Duda Cruz Almeida
+                                </li>
+                                <li class="list-group-item">
+                                  <i
+                                    class="la la-angle-double-right text-info mr-2"
+                                  >
+                                  </i>
+                                  Cruz Duda Carmo Coelho
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>4</td>
+                          <td>1</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="border">
+        <div class="container-fluid py-3">
+          <div class="row">
+            <div class="col d-flex">
+              <span>© 2021 Cubo Digital</span>
+              <span class="ml-auto">Desenvolvido por Technine</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/metismenu.min.js"></script>
+    <script src="../../assets/js/waves.js"></script>
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/simplebar.min.js"></script>
+    <script src="../../assets/js/moment.js"></script>
+    <script src="../../assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <script src="../../assets/js/utils/toggleclass.js"></script>
+
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>
