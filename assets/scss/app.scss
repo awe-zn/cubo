@@ -163,3 +163,13 @@ File: App Css
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.select2-selection.select2-selection--multiple {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  height: 39.19px;
+
+  ul.select2-selection__rendered {
+    padding: 0;
+  }
+}
