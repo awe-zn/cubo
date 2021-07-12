@@ -173,3 +173,24 @@ File: App Css
     padding: 0;
   }
 }
+
+.accordion {
+  .card-header {
+    .btn {
+      color: #343434 !important;
+
+      padding: 0 !important;
+
+      &:not(.collapsed) {
+        font-weight: bold;
+      }
+    }
+  }
+  .card-body {
+    border-bottom: 1px solid #e3ebf6;
+  }
+}
+
+.fz-12 {
+  font-size: 12px !important;
+}
