@@ -181,8 +181,18 @@ File: App Css
 
       padding: 0 !important;
 
+      .icon-indicator {
+        transition: 0.3s transform;
+
+        stroke: $cubo-light-blue;
+      }
+
       &:not(.collapsed) {
         font-weight: bold;
+
+        .icon-indicator {
+          transform: rotate(180deg);
+        }
       }
     }
   }
