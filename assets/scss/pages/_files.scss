@@ -58,8 +58,7 @@
       .file-download-icon {
         font-size: 13px;
         position: relative;
-        top: -10px;
-        left: 110px;
+        float: right;
       }
       &:hover {
         color: $primary;
