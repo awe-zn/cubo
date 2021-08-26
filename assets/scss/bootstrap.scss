@@ -26,3 +26,47 @@ Author: Mannatthemes
 .btn {
   @extend .text-truncate;
 }
+
+.gapy-4 {
+  row-gap: 24px !important;
+}
+
+.gapy-3 {
+  row-gap: 16px !important;
+}
+
+.gapy-2 {
+  row-gap: 8px !important;
+}
+
+.gapy-1 {
+  row-gap: 4px !important;
+}
+
+.gapx-2 {
+  column-gap: 8px !important;
+}
+
+.gapx-3 {
+  column-gap: 16px !important;
+}
+
+.gap-3 {
+  gap: 16px !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.text-golden {
+  color: #fcce6e;
+}
+
+.nav-link.active {
+  border-bottom-color: $dark !important;
+}
