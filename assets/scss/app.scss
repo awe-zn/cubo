@@ -202,3 +202,13 @@ File: App Css
 .fz-12 {
   font-size: 12px !important;
 }
+
+.achievements-table {
+  .achievement {
+    & + .achievement {
+      padding-top: 8px;
+      border-top: 1px solid #e3ebf6;
+      margin-top: 8px;
+    }
+  }
+}
